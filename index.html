@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Fitness Tracker</title>
+        <link rel="stylesheet" href="styles.css" />
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <h1 class="title">Fitness Tracker</h1>
+        </header>
+        <main id="mainDiv">
+            <p>Track your fitness progress interactively!</p>
+            <section id="inputSection">
+                <label for="milesInput">Miles:</label>
+                <input type="number" id="milesInput" placeholder="Enter miles" />
+                <label for="activityType">Activity Type:</label>
+                <select id="activityType">
+                    <option value="walk">Walk</option>
+                    <option value="run">Run</option>
+                    <option value="jog">Jog</option>
+                </select>
+                <button id="calculateSteps">Calculate Steps</button>
+                <p>Total steps: <span id="calculatedSteps">0</span></p>
+                <p class="description">
+                    <strong>How steps are calculated:</strong><br />
+                    Steps are calculated based on the selected activity type and the distance in miles.
+                    Each mile walked counts as approximately 2,000 steps, jogging counts as 1,800 steps per mile,
+                    and running counts as 1,500 steps per mile.
+                </p>
+            </section>
+
+            <section id="widgetsSection">
+                <h2>Widgets</h2>
+                <div class="widget" id="stepCounter">
+                    <h3>Step Counter</h3>
+                    <p>Total steps today: <span id="steps">0</span></p>
+                    <button id="increaseSteps">Increase Steps</button>
+                </div>
+                <div class="widget" id="calorieTracker">
+                    <h3>Calorie Tracker</h3>
+                    <input type="number" id="calorieInput" placeholder="Calories consumed" />
+                    <button id="addCalories">Add Calories</button>
+                    <p>Total calories: <span id="totalCalories">0</span></p>
+                </div>
+                <div class="widget" id="waterIntake">
+                    <h3>Water Intake</h3>
+                    <p>Glasses of water: <span id="waterGlasses">0</span></p>
+                    <button id="addWater">Add Glass</button>
+                </div>
+            </section>
+
+            <section id="activityPageLink">
+                <h2>Manage Activities</h2>
+                <p>Click the button below to manage your activities.</p>
+                <button onclick="location.href='activities.html'">Go to Activities</button>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2025 Fitness Tracker</p>
+        </footer>
+    </body>
+</html>

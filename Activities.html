@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Manage Activities</title>
+        <link rel="stylesheet" href="styles.css" />
+        <script src="activities.js" defer></script>
+        <style>
+            #activityList {
+                margin-top: 10px;
+                padding: 0;
+                list-style-type: none;
+            }
+
+            #activityList li {
+                padding: 8px 12px;
+                margin: 6px 0;
+                background-color: #f0f0f0;
+                border-radius: 4px;
+                cursor: pointer;
+                transition: background-color 0.3s;
+            }
+
+            #activityList li:hover {
+                background-color: #dcdcdc;
+            }
+
+            .remove-hint {
+                font-size: 0.9em;
+                color: gray;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1 class="title">Manage Activities</h1>
+        </header>
+        <main>
+            <section id="editableListSection">
+                <h2>Activity List</h2>
+                <p>Add and manage your daily activities below:</p>
+                <input type="text" id="activityInput" placeholder="Enter new activity" />
+                <button id="addActivity">Add Activity</button>
+                <p class="remove-hint">Click on an activity to remove it from the list.</p>
+                <ul id="activityList"></ul>
+            </section>
+            <button onclick="location.href='index.html'">Back to Fitness Tracker</button>
+        </main>
+        <footer>
+            <p>&copy; 2025 Fitness Tracker</p>
+        </footer>
+    </body>
+</html>

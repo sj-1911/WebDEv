@@ -1,0 +1,93 @@
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 0;
+    background-color: #121212; /* Dark background */
+    color: #FFFFFF; /* Light text for contrast */
+}
+
+/* Title Styles */
+.title {
+    text-align: center;
+    color: #BB86FC; /* Primary color for the title */
+    margin-bottom: 20px;
+    font-size: 2em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Main Container */
+#mainDiv {
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #121212; /* Surface background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Input and Button Styles */
+input, button {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #3700B3; /* Primary variant border */
+    border-radius: 5px;
+    background-color: #1E1E1E; /* Slightly lighter dark background for inputs */
+    color: #FFFFFF; /* Light text for inputs */
+}
+
+button {
+    background-color: #03DAC6; /* Secondary color */
+    color: #000000; /* Text contrast on bright button */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #018786; /* Darker secondary color for hover effect */
+    transform: scale(1.05); /* Slight scaling effect for interactivity */
+}
+
+/* List Styles */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #3700B3; /* Primary variant border */
+    border-radius: 5px;
+    background-color: #1E1E1E; /* Surface background */
+    color: #FFFFFF; /* Light text */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Activity Log Section */
+#activitiesSection {
+    margin-top: 20px;
+    background-color: #121212; /* Match dark mode background */
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+#activitiesSection h2 {
+    color: #03DAC6; /* Secondary color for section title */
+    text-align: center;
+}
+
+/* Error Messages */
+.error {
+    color: #CF6679; /* Error color */
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Steps/Calories Display */
+#calculatedSteps, #totalCalories {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #BB86FC; /* Primary color for calculated numbers */
+}
